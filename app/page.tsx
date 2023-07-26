@@ -1,12 +1,18 @@
 "use client"
 import React, { useState } from 'react';
-import { FaHome, FaSearch, FaBook, FaPlus, FaArrowRight, FaTimes } from 'react-icons/fa';
+import { FaHome, FaSearch, FaBook, FaPlus, FaArrowRight, FaTimes, FaChevronRight, FaChevronLeft } from 'react-icons/fa';
 import Image from 'next/image';
 import IconOne from '../public/images/liked-songs-640.png';
 import IconTwo from '../public/images/ab6761610000101f9c30c6b69a55d48decd71600.webp';
 import IconThree from '../public/images/ab6761610000101fc4902f080d3620b3e6da80c3.webp';
 import IconFour from '../public/images/ab6761610000101fd8b9980db67272cb4d2c3daf.webp';
 import IconFive from '../public/images/ab6761610000101f214f3cf1cbe7139c1e26ffbb.webp';
+import IconMixOne from '../public/images/mix (1).jpg';
+import IconMixTwo from '../public/images/mix (2).jpg';
+import IconMixThree from '../public/images/mix (3).jpg';
+import IconMixFour from '../public/images/mix (4).jpg';
+import IconMixFive from '../public/images/mix (5).jpg';
+import IconMixSix from '../public/images/mix (6).jpg';
 
 
 export default function Home() {
@@ -172,8 +178,253 @@ export default function Home() {
         <div className="mx-0"></div> {/* Espaço entre as colunas */}
         <div className="rounded-xl mx-1 my-2 bg-zinc-900 flex-1 p-8">
                           {/* Conteúdo da coluna maior */}
-          <h2 className="text-xl font-semibold mb-4">Boa noite</h2>
-          <p>Coluna maior</p>
+        <div className="flex items-center mb-5" style={{ maxHeight: 'calc(100% - 5rem)', overflowY: 'auto' }}>
+          <button className="px-2.5 py-1.5 bg-zinc-950 bg-opacity-60 rounded-3xl mr-2 cursor-pointer">
+              <FaChevronLeft className="inline" />
+          </button>
+          <button className="px-2.5 py-1.5 bg-zinc-950 bg-opacity-60 rounded-3xl mr-2 cursor-pointer">
+              <FaChevronRight className="inline" />
+          </button>
+              <div className="flex justify-end ml-auto mb-0">
+                <div className="px-4 p-0 mr-3 bg-slate-100 rounded-3xl cursor-pointer transition-transform transform hover:scale-110">
+                  <h2 className="py-2.5 text-zinc-800 text-xs font-semibold">Ver Planos Premium</h2>
+                </div>
+                <div className="px-4 p-0 mr-3 bg-zinc-950 bg-opacity-60 rounded-3xl transition-transform transform hover:scale-110 cursor-pointer">
+                  <h2 className="py-2 text-white text-sm font-semibold">Instalar aplicativo</h2>
+                </div>
+              </div>
+        </div>
+          <h2 className="text-3xl font-bold mb-4">Boa noite</h2>
+          <div className='py-2 columns-3'>
+              <ul>
+                <li className="text-lg p-2 px-0 py-0 text-zinc-300 font-semibold mb-4 hover:text-zinc-200 bg-zinc-800 hover:bg-zinc-700 rounded-lg hover:rounded-lg hover:cursor-pointer">
+                  <Image
+                    src={IconMixOne}
+                    alt="Like Songs"
+                    className="inline mr-5 rounded-lg"
+                    width={80}
+                    height={80}
+                  />
+                  <div className='py-7 inline-flex flex-col justify-center absolute '>
+                    <p className='text-lg'>Liked Songs</p>             
+                  </div>
+                </li>
+                <li className="text-lg p-2 px-0 py-0 text-zinc-300 font-semibold mb-4 hover:text-zinc-200 bg-zinc-800 hover:bg-zinc-700 rounded-lg hover:rounded-lg hover:cursor-pointer">
+                  <Image
+                    src={IconMixTwo}
+                    alt="Like Songs"
+                    className="inline mr-5 rounded-lg"
+                    width={80}
+                    height={80}
+                  />
+                  <div className='py-7 inline-flex flex-col justify-center absolute '>
+                    <p className='text-lg'>Liked Songs</p>             
+                  </div>
+                </li>
+                <li className="text-lg p-2 px-0 py-0 text-zinc-300 font-semibold mb-4 hover:text-zinc-200 bg-zinc-800 hover:bg-zinc-700 rounded-lg hover:rounded-lg hover:cursor-pointer">
+                  <Image
+                    src={IconMixThree}
+                    alt="Like Songs"
+                    className="inline mr-5 rounded-lg"
+                    width={80}
+                    height={80}
+                  />
+                  <div className='py-7 inline-flex flex-col justify-center absolute '>
+                    <p className='text-lg'>Liked Songs</p>             
+                  </div>
+                </li>
+                <li className="text-lg p-2 px-0 py-0 text-zinc-300 font-semibold mb-4 hover:text-zinc-200 bg-zinc-800 hover:bg-zinc-700 rounded-lg hover:rounded-lg hover:cursor-pointer">
+                  <Image
+                    src={IconMixFour}
+                    alt="Like Songs"
+                    className="inline mr-5 rounded-lg"
+                    width={80}
+                    height={80}
+                  />
+                  <div className='py-7 inline-flex flex-col justify-center absolute '>
+                    <p className='text-lg'>Liked Songs</p>             
+                  </div>
+                </li>
+                <li className="text-lg p-2 px-0 py-0 text-zinc-300 font-semibold mb-4 hover:text-zinc-200 bg-zinc-800 hover:bg-zinc-700 rounded-lg hover:rounded-lg hover:cursor-pointer">
+                  <Image
+                    src={IconMixFive}
+                    alt="Like Songs"
+                    className="inline mr-5 rounded-lg"
+                    width={80}
+                    height={80}
+                  />
+                  <div className='py-7 inline-flex flex-col justify-center absolute '>
+                    <p className='text-lg'>Liked Songs</p>             
+                  </div>
+                </li>
+                <li className="text-lg p-2 px-0 py-0 text-zinc-300 font-semibold mb-4 hover:text-zinc-200 bg-zinc-800 hover:bg-zinc-700 rounded-lg hover:rounded-lg hover:cursor-pointer">
+                  <Image
+                    src={IconMixSix}
+                    alt="Like Songs"
+                    className="inline mr-5 rounded-lg"
+                    width={80}
+                    height={80}
+                  />
+                  <div className='py-7 inline-flex flex-col justify-center absolute '>
+                    <p className='text-lg'>Liked Songs</p>             
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <h2 className="text-2xl font-bold mb-4 py-4">Os Maiore Hits do momentos</h2>
+            <div className='py-2 columns-3'>
+              <ul>
+                <li className="text-lg p-2 px-0 py-0 text-zinc-300 font-semibold mb-4 hover:text-zinc-200 bg-zinc-800 hover:bg-zinc-700 rounded-lg hover:rounded-lg hover:cursor-pointer">
+                  <Image
+                    src={IconMixOne}
+                    alt="Like Songs"
+                    className="inline mr-5 rounded-lg"
+                    width={80}
+                    height={80}
+                  />
+                  <div className='py-7 inline-flex flex-col justify-center absolute '>
+                    <p className='text-lg'>Liked Songs</p>             
+                  </div>
+                </li>
+                <li className="text-lg p-2 px-0 py-0 text-zinc-300 font-semibold mb-4 hover:text-zinc-200 bg-zinc-800 hover:bg-zinc-700 rounded-lg hover:rounded-lg hover:cursor-pointer">
+                  <Image
+                    src={IconMixTwo}
+                    alt="Like Songs"
+                    className="inline mr-5 rounded-lg"
+                    width={80}
+                    height={80}
+                  />
+                  <div className='py-7 inline-flex flex-col justify-center absolute '>
+                    <p className='text-lg'>Liked Songs</p>             
+                  </div>
+                </li>
+                <li className="text-lg p-2 px-0 py-0 text-zinc-300 font-semibold mb-4 hover:text-zinc-200 bg-zinc-800 hover:bg-zinc-700 rounded-lg hover:rounded-lg hover:cursor-pointer">
+                  <Image
+                    src={IconMixThree}
+                    alt="Like Songs"
+                    className="inline mr-5 rounded-lg"
+                    width={80}
+                    height={80}
+                  />
+                  <div className='py-7 inline-flex flex-col justify-center absolute '>
+                    <p className='text-lg'>Liked Songs</p>             
+                  </div>
+                </li>
+                <li className="text-lg p-2 px-0 py-0 text-zinc-300 font-semibold mb-4 hover:text-zinc-200 bg-zinc-800 hover:bg-zinc-700 rounded-lg hover:rounded-lg hover:cursor-pointer">
+                  <Image
+                    src={IconMixFour}
+                    alt="Like Songs"
+                    className="inline mr-5 rounded-lg"
+                    width={80}
+                    height={80}
+                  />
+                  <div className='py-7 inline-flex flex-col justify-center absolute '>
+                    <p className='text-lg'>Liked Songs</p>             
+                  </div>
+                </li>
+                <li className="text-lg p-2 px-0 py-0 text-zinc-300 font-semibold mb-4 hover:text-zinc-200 bg-zinc-800 hover:bg-zinc-700 rounded-lg hover:rounded-lg hover:cursor-pointer">
+                  <Image
+                    src={IconMixFive}
+                    alt="Like Songs"
+                    className="inline mr-5 rounded-lg"
+                    width={80}
+                    height={80}
+                  />
+                  <div className='py-7 inline-flex flex-col justify-center absolute '>
+                    <p className='text-lg'>Liked Songs</p>             
+                  </div>
+                </li>
+                <li className="text-lg p-2 px-0 py-0 text-zinc-300 font-semibold mb-4 hover:text-zinc-200 bg-zinc-800 hover:bg-zinc-700 rounded-lg hover:rounded-lg hover:cursor-pointer">
+                  <Image
+                    src={IconMixSix}
+                    alt="Like Songs"
+                    className="inline mr-5 rounded-lg"
+                    width={80}
+                    height={80}
+                  />
+                  <div className='py-7 inline-flex flex-col justify-center absolute '>
+                    <p className='text-lg'>Liked Songs</p>             
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <h2 className="text-2xl font-bold mb-4 py-4">Feito para você</h2>
+            <div className='py-2 columns-3'>
+              <ul>
+                <li className="text-lg p-2 px-0 py-0 text-zinc-300 font-semibold mb-4 hover:text-zinc-200 bg-zinc-800 hover:bg-zinc-700 rounded-lg hover:rounded-lg hover:cursor-pointer">
+                  <Image
+                    src={IconMixOne}
+                    alt="Like Songs"
+                    className="inline mr-5 rounded-lg"
+                    width={80}
+                    height={80}
+                  />
+                  <div className='py-7 inline-flex flex-col justify-center absolute '>
+                    <p className='text-lg'>Liked Songs</p>             
+                  </div>
+                </li>
+                <li className="text-lg p-2 px-0 py-0 text-zinc-300 font-semibold mb-4 hover:text-zinc-200 bg-zinc-800 hover:bg-zinc-700 rounded-lg hover:rounded-lg hover:cursor-pointer">
+                  <Image
+                    src={IconMixTwo}
+                    alt="Like Songs"
+                    className="inline mr-5 rounded-lg"
+                    width={80}
+                    height={80}
+                  />
+                  <div className='py-7 inline-flex flex-col justify-center absolute '>
+                    <p className='text-lg'>Liked Songs</p>             
+                  </div>
+                </li>
+                <li className="text-lg p-2 px-0 py-0 text-zinc-300 font-semibold mb-4 hover:text-zinc-200 bg-zinc-800 hover:bg-zinc-700 rounded-lg hover:rounded-lg hover:cursor-pointer">
+                  <Image
+                    src={IconMixThree}
+                    alt="Like Songs"
+                    className="inline mr-5 rounded-lg"
+                    width={80}
+                    height={80}
+                  />
+                  <div className='py-7 inline-flex flex-col justify-center absolute '>
+                    <p className='text-lg'>Liked Songs</p>             
+                  </div>
+                </li>
+                <li className="text-lg p-2 px-0 py-0 text-zinc-300 font-semibold mb-4 hover:text-zinc-200 bg-zinc-800 hover:bg-zinc-700 rounded-lg hover:rounded-lg hover:cursor-pointer">
+                  <Image
+                    src={IconMixFour}
+                    alt="Like Songs"
+                    className="inline mr-5 rounded-lg"
+                    width={80}
+                    height={80}
+                  />
+                  <div className='py-7 inline-flex flex-col justify-center absolute '>
+                    <p className='text-lg'>Liked Songs</p>             
+                  </div>
+                </li>
+                <li className="text-lg p-2 px-0 py-0 text-zinc-300 font-semibold mb-4 hover:text-zinc-200 bg-zinc-800 hover:bg-zinc-700 rounded-lg hover:rounded-lg hover:cursor-pointer">
+                  <Image
+                    src={IconMixFive}
+                    alt="Like Songs"
+                    className="inline mr-5 rounded-lg"
+                    width={80}
+                    height={80}
+                  />
+                  <div className='py-7 inline-flex flex-col justify-center absolute '>
+                    <p className='text-lg'>Liked Songs</p>             
+                  </div>
+                </li>
+                <li className="text-lg p-2 px-0 py-0 text-zinc-300 font-semibold mb-4 hover:text-zinc-200 bg-zinc-800 hover:bg-zinc-700 rounded-lg hover:rounded-lg hover:cursor-pointer">
+                  <Image
+                    src={IconMixSix}
+                    alt="Like Songs"
+                    className="inline mr-5 rounded-lg"
+                    width={80}
+                    height={80}
+                  />
+                  <div className='py-7 inline-flex flex-col justify-center absolute '>
+                    <p className='text-lg'>Liked Songs</p>             
+                  </div>
+                </li>
+              </ul>
+            </div>    
         </div>
       </div>
     </div>
