@@ -26,3 +26,27 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+/* Hide the default scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+/* Make scrollbar handle visible when hovering or scrolling */
+::-webkit-scrollbar-thumb:hover,
+.scroll-visible ::-webkit-scrollbar-thumb {
+  background-color: rgba(104, 104, 104, 0.5);
+}
+
+.volume-bar-container {
+  /* ... (estilos existentes) */
+  align-self: flex-end;
+}
+
